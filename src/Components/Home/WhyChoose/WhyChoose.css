@@ -1,0 +1,113 @@
+#WhyChoose{
+    height: 150vh;
+    width: 80%;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.WhyChooseContainer{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.bgImg{
+    position: absolute;
+    object-fit: contain;
+    height: 100%;
+    width: 80%;
+    left: -25%;
+}
+.imageBox{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imageBox img{
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+.contentBox{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contentBox .left{
+    height: 100%;
+    width: 50%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.contentBox .left .title{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+    color: black;
+}
+.contentBox .left h1{
+    font-size: 2.5rem;
+    margin: 3% 0;
+    font-weight: 700;
+}
+.contentBox .left p{
+    font-size: 1rem;
+    margin: 0;
+    color: rgb(130, 127, 127);
+}
+.contentBox .left button{
+    font-size: 1.3rem;
+    padding: 3% 5%;
+    margin: 5% 0;
+}
+.contentBox .right{
+    height: 80%;
+    width: 45%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contentBox .right .box{
+    width: 90%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.contentBox .right .box .left{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentBox .right .box .right{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
+.contentBox .right .box .right .rtext{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+}

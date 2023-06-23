@@ -1,0 +1,66 @@
+#Download{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.DownloadContainer{
+    height: 70%;
+    width: 80%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #eeeeee;
+}
+.DownloadContainer .left{
+    height: 100%;
+    width: 45%;
+    padding: 0 2.5%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.DownloadContainer .left .title{
+    font-size: 3.1rem;
+    font-weight: 600;
+    margin: 3% 0;
+    color: black;
+}
+.DownloadContainer .left p{
+    margin: 3% 0;
+    font-size: 1rem;
+    color: rgb(130, 127, 127);
+}
+.DownloadContainer .left .buttonsBox{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.DownloadContainer .left button{
+    font-size: 1.3rem;
+    padding: 3% 5%;
+    margin: 5% 0;
+}
+.DownloadContainer .right{
+    height: 100%;
+    width: 55%;
+    background-color: transparent;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: transparent;
+}
+.DownloadContainer .right img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,74 @@
+.CarouselCard{
+    height: 250px;
+    width: 400px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:5% 2%;
+    box-shadow: 0 0 10px rgb(163, 157, 157);
+}
+.CarouselCard .top{
+    height: 50%;
+    width: 100%;
+    background-color: transparent;
+}
+.CarouselCard .top p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    width: 100%;
+    text-align: left;
+    word-spacing: .2rem;
+    line-height: 110%;
+}
+.CarouselCard .bottom{
+    height: 50%;
+    width: 100%;
+    background-color: transparent;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.CarouselCard .bottom .left{
+    width: 80%;
+    height: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.CarouselCard .bottom .left span{
+    width: 100%;
+    margin:0 5%;
+}
+.CarouselCard .bottom .left span h2, .CarouselCard .bottom .left span p {
+    margin: 1% 0;
+}
+.CarouselCard .bottom .left img{
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.CarouselCard .bottom .left h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+}
+.CarouselCard .bottom .right{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CarouselCard .bottom .right h1{
+    color: orangered;
+    font-size: 5rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}

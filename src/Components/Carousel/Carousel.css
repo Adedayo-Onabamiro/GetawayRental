@@ -1,0 +1,188 @@
+/* .carouselwrapper {
+    width: fit-content;
+    overflow: hidden;
+    border: 5px solid black;
+    position: relative;
+}
+.carousel{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+.carousel.prev {
+    animation-duration: .6s;
+    animation-timing-function:cubic-bezier(0.83, 0, 0.17, 1);
+    animation-name: prev;
+}
+  
+.carousel.next {
+    animation-duration: .6s;
+    animation-timing-function:cubic-bezier(0.83, 0, 0.17, 1);
+    animation-name: next;
+}
+li {
+    padding: 50px;
+    text-align: center;
+    width: auto;
+    box-sizing: border-box;
+}  
+.ui{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+} 
+button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    transition: all .2s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+button:hover {
+    border: 2px solid black;
+    transition: all .2s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+@keyframes next {
+  from {
+    transform:translateX(0px);
+  }
+  to {
+    transform:translateX(calc(0px + var(--cardWidth)));
+  }
+}
+
+@keyframes prev {
+  from {
+    transform:translateX(0px);
+  }
+  to {
+    transform:translateX(calc(0px - var(--cardWidth)));
+  }
+} */
+
+:root {
+  --up: 2; /* Number of items to display in the carousel (default: 3) */
+  --card-margin: 12px; /* Margin around each card */
+  --card-shadow: rgba(46, 49, 52, .4); /* Box shadow for cards */
+  --color-white: #fff; /* White color */
+  --color-lightgrey: #ccc; /* Light gray color */
+  --color-ui: #999; /* Color for UI controls */
+  --color-ui-hover: #666; /* Color for UI controls on hover */
+  --cardWidth: calc(96vw/var(--up)); /* Width of each card */
+  --carouselWidth: calc(var(--cardWidth) * var(--num)); /* Width of the carousel */
+  --carouselLeftMargin: calc(2vw - var(--cardWidth)); /* Left margin of the carousel */
+
+  /* Media query for mobile devices */
+  @media screen and (max-width: 900px) {
+    --up: 1; /* On screens <= 900px, display only 1 item in the carousel */
+  }
+}
+
+/* Carousel Wrapper */
+.carouselwrapper {
+  width: 100%;
+  height: 90%;
+  overflow: hidden; /* Hide content that exceeds the wrapper's dimensions */
+  /* background: var(--color-lightgrey); */
+  background-color: transparent;
+  position: relative; /* Establish positioning context for child elements */
+}
+
+/* Carousel */
+.carousel {
+  /* width: var(--carouselWidth); Set the width of the carousel */
+  width: auto;
+  justify-content: space-evenly;
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap when they exceed the container's width */
+  list-style: none; /* Remove default list styles */
+}
+
+/* Previous Slide Animation */
+.carousel.prev {
+  animation-duration: .6s;
+  animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+  animation-name: prev;
+}
+
+/* Next Slide Animation */
+.carousel.next {
+  animation-duration: .6s;
+  animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+  animation-name: next;
+}
+
+/* Carousel Item (Card) */
+.carousel li {
+  padding: 50px; /* Padding around each card */
+  text-align: center; /* Center the contents of the card */
+  width: calc(var(--cardWidth) - var(--card-margin) * 2); /* Calculate the width of each card */
+  box-sizing: border-box; /* Include padding and border in the box dimensions */
+}
+
+/* UI Controls */
+.ui {
+  position: absolute; /* Position the controls absolutely */
+  top: 50%; /* Vertically align the controls in the middle */
+  transform: translateY(-50%); /* Adjust the vertical position */
+  display: flex; /* Use flexbox for layout */
+  width: calc(100% - var(--card-margin) * 2); /* Set the width of the controls */
+  justify-content: space-between; /* Space out the controls */
+  padding: var(--card-margin); /* Add padding around the controls */
+  z-index: 100; /* Set a higher z-index to appear above other elements */
+}
+  /* Control Button */
+  .ui button {
+    cursor: pointer; /* Set cursor to pointer on hover */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center the icon vertically */
+    justify-content: center; /* Center the icon horizontally */
+    background: var(--color-ui); /* Background color for the button */
+    width: 40px; /* Button width */
+    height: 40px; /* Button height */
+    border-radius: 50%; /* Make the button circular */
+    color: var(--color-white); /* Text color */
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, .25); /* Box shadow */
+    border: 0; /* Remove border */
+    transition: all .2s cubic-bezier(0.39, 0.575, 0.565, 1); /* Transition effect */
+    &:hover {
+      background: var(--color-ui-hover); /* Change background color on hover */
+    }
+    &:focus {
+      outline: none; /* Remove default focus outline */
+      border: 1px solid rgba(255, 255, 255, 1); /* Add a border on focus */
+    }
+}
+
+
+/* Next Slide Animation Keyframe */
+@keyframes next {
+  from {
+    transform: translateX(0px); /* Starting position of the animation */
+  }
+  to {
+    transform: translateX(calc(0px + var(--cardWidth))); /* Ending position of the animation */
+  }
+}
+
+/* Previous Slide Animation Keyframe */
+@keyframes prev {
+  from {
+    transform: translateX(0px); /* Starting position of the animation */
+  }
+  to {
+    transform: translateX(calc(0px - var(--cardWidth))); /* Ending position of the animation */
+  }
+}

@@ -1,0 +1,81 @@
+#footer{
+    height: 40vh;
+    width: 80%;
+    padding: 3% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+#footer p{
+    font-size: 1rem;
+}
+.footerContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.footerContainer .fone, .ftwo, .fthree, .ffour{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+.footerContainer .fone span{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+}
+.footerContainer .fone span h3{
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 700;
+}
+.footerContainer .fone span h5{
+    font-weight: 100;
+    margin: 0 3%;
+    font-size: 1.3rem;
+}
+.footerContainer .fone span p{
+    font-weight: 500;
+}
+.footerContainer .ftwo > div{
+    margin-top: 5%;
+}
+.footerContainer .ftwo p, a{
+    text-decoration: none;
+    color: black;
+    margin: 8% 0;
+    font-size: 1rem;
+}
+.footerContainer .ftwo h2{
+    margin: 0;
+}
+.footerContainer .fthree h3, .footerContainer .ffour h3{
+    margin: 0;
+}
+.footerContainer .fthree > div{
+    margin-top: 10%;
+}
+.footerContainer .fthree p{
+    text-decoration: none;
+    color: black;
+    margin: 5% 0;
+}
+.footerContainer .fthree h2{
+    margin: 0;
+}
+.footerContainer .ffour button{
+    width: 100%;
+    font-size: 1rem;
+    padding: 5% 0;
+    margin-bottom: 5%;
+}

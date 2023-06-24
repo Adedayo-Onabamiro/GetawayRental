@@ -135,6 +135,7 @@ button{
 }
 /*End of table*/
 
+/* Start of Banner */
 .Banner{
   height: 60vh;
   width: 100%;
@@ -204,3 +205,45 @@ button{
   font-size: 1.2rem;
   padding: 5% 10%;
 }
+/* End of Banner */
+
+/* Start of Small Banner */
+.SmallBanner{
+  height: 30vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 1);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.5)), url("/public/img/banners/book-banner.png");
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-size: auto;
+}
+.SmallBanner .Scenter{
+  width: 90%;
+  height: auto;
+  background-color: transparent; /* Replace with your desired background color */
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+}
+.SmallBanner .Scenter h3{
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.SmallBanner .Scenter p{
+  font-size: 2rem;
+  color: #ff5130;
+  font-size: 600;
+  margin: 0;
+  padding: 0;
+}
+/* End of Small Banner */

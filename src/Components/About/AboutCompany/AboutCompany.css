@@ -1,0 +1,57 @@
+#AboutCompany{
+    height: 80vh;
+    width: 80%;
+    padding: 0 10%;
+    background-color: grey;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+.AboutCompanyContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 80%;
+    width: 100%;
+    border: 1px solid red;
+}
+.AboutCompanyContainer .aleft, .AboutCompanyContainer .aright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.AboutCompanyContainer .aleft{
+    width: 40%;
+    border: 1px solid blue;
+}
+.AboutCompanyContainer .aleft img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.AboutCompanyContainer .aright{
+    width: 45%;
+    border: 1px solid red;
+    align-items: start;
+}
+.AboutCompanyContainer .aright .title{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0;
+}
+.AboutCompanyContainer .aright h1{
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+.AboutCompanyContainer .aright .three{
+    font-size: 1rem;
+    margin:0 0 4% 0;
+    padding: 0;
+}

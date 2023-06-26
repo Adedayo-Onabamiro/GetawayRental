@@ -1,8 +1,8 @@
 #AboutCompany{
     height: 80vh;
-    width: 80%;
-    padding: 0 10%;
-    background-color: grey;
+    width: 65%;
+    padding: 0 17.5%;
+    background-color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -15,9 +15,8 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    height: 80%;
+    height: auto;
     width: 100%;
-    border: 1px solid red;
 }
 .AboutCompanyContainer .aleft, .AboutCompanyContainer .aright {
     display: flex;
@@ -28,7 +27,18 @@
 }
 .AboutCompanyContainer .aleft{
     width: 40%;
-    border: 1px solid blue;
+    position: relative;
+}
+.youtubeBox{
+    height: 130px;
+    width: 120px;
+    background-color: #ff5130;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -15%;
+    bottom: 0;
 }
 .AboutCompanyContainer .aleft img{
     height: 100%;
@@ -37,21 +47,49 @@
 }
 .AboutCompanyContainer .aright{
     width: 45%;
-    border: 1px solid red;
+    height: auto;
     align-items: start;
 }
 .AboutCompanyContainer .aright .title{
     font-size: 1.6rem;
-    font-weight: 500;
-    margin: 0;
+    font-weight: 400;
+    margin: 5% 0;
 }
 .AboutCompanyContainer .aright h1{
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin: 0;
     padding: 0;
 }
-.AboutCompanyContainer .aright .three{
+.AboutCompanyContainer .aright p{
     font-size: 1rem;
-    margin:0 0 4% 0;
+}
+.featureContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.featureBox{
+    /* border: 1px solid white; */
+    /* min-height: 100px;
+    min-width: 150px; */
+    width: auto;
+    height: auto;
+    margin:0 3%;
+}
+.featureBox img{
+    object-fit: contain;
+    height: 55px;
+    width: 55px;
+    margin: 0;
     padding: 0;
+}
+.featureBox span{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+.featureBox span p{
+   margin: 10%
 }

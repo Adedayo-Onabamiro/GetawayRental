@@ -40,7 +40,7 @@ export const Navigation = () => {
               <li className="NavMenuLi"> <Link to = "/"> Home </Link> </li>
               <li className="NavMenuLi"> <Link to = "/about"> About </Link> </li>
               <li className="NavMenuLi"> <Link to = "/vehiclemodels "> Vehicle Models  </Link> </li>
-              <li className="NavMenuLi"> <Link to = "/testimonials"> Testimonials </Link>    </li>
+              <li className="NavMenuLi"> <Link to = "/testimonialPage"> Testimonials </Link>    </li>
               <li className="NavMenuLi"> <Link to = "/ourteam ">  Our Team  </Link> </li>
               <li className="NavMenuLi"> <Link to = "/contact "> Contact </Link> </li>
             </ul>

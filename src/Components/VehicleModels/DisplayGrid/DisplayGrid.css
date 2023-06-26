@@ -1,0 +1,27 @@
+#DisplayGrid{
+    min-height: 150vh;
+    height: auto;
+    width: 80%;
+    padding: 5% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+.DisplayGridContainer{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+  .gallery {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }

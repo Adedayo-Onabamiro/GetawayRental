@@ -1,24 +1,22 @@
 import React from 'react'
 import { Title } from '../Components/General/Title/Title'
-import { AboutCompany } from '../Components/About/AboutCompany/AboutCompany'
-import { PlanTrip } from '../Components/Home/PlanTrip/PlanTrip';
 import { Footer } from '../Components/General/Footer/Footer';
+import { DisplayGrid } from '../Components/VehicleModels/DisplayGrid/DisplayGrid';
 
-export const About = () => {
+export const VehicleModels = () => {
   return (
     <>
         <Title 
-          title= "About"
-          link = "Home / About"
+          title= "Vehicle Models"
+          link = "Home / Vehicle Models"
         ></Title>
-        <AboutCompany></AboutCompany>
-        <PlanTrip></PlanTrip>
+        <DisplayGrid></DisplayGrid>
         <div className='SmallBanner'>
           <div className='Scenter'>
                     <h3> Book a car by getting in touch with us </h3>
                     <p> (123) 456-7869 </p>
           </div>
-      </div>
+        </div>
         <Footer></Footer>
     </>
   )

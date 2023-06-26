@@ -22,7 +22,7 @@ export const VehicleModels = () => {
                         <button>Mercedes-Benz GLK</button>
                         <button>VW Passat CC</button>
                     </div>
-                    <div className='center'> <img src='/img/cars-big/golf6.jpg' /> </div>
+                    <div className='center'> <img src='/img/carsBig/golf6.jpg' /> </div>
                     <div className='right'>
                         <div className='top'> <p> <span>$45</span> / rent per day</p> </div>
                         <div className='middle'>

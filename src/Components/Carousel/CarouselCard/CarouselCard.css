@@ -6,8 +6,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding:5% 2%;
+    padding:3% 2%;
     box-shadow: 0 0 10px rgb(163, 157, 157);
+    margin: 1%;
 }
 .CarouselCard .top{
     height: 50%;

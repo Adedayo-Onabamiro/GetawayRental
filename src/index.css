@@ -304,6 +304,19 @@ button{
   /* End of Banner */
 }
 @media screen and (max-width: 1024px) {
+  .SmallBanner .Scenter h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+  .SmallBanner .Scenter p{
+    font-size: 1.7rem;
+    color: #ff5130;
+    font-size: 600;
+    margin: 0;
+    padding: 0;
+  }
 }
 @media screen and (max-width: 710px) {
   .formContent{
@@ -330,5 +343,9 @@ button{
   }
   .Banner .center .cright{
     display: none;
+  }
+  .SmallBanner .Scenter{
+    flex-direction:column;
+    text-align: center;
   }
 }

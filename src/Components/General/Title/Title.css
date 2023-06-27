@@ -1,5 +1,6 @@
 #title{
-    height: 55vh;
+    min-height: 55vh;
+    height: auto;
     width: 80%;
     padding: 0 10%;
     background-color: white;
@@ -9,6 +10,7 @@
     flex-direction: column;
     position: relative;
     z-index: 1;
+    background-position: center;
     background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("/public/img/hero/heroes-bg.png");
 }
 .titleContainer{

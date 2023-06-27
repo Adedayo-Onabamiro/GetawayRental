@@ -94,4 +94,11 @@
     .CarouselCard .bottom .right{
         display: none;
     }
-  }
+    .CarouselCard .top, .CarouselCard .bottom{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+}

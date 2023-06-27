@@ -84,3 +84,14 @@
     padding: 5% 10%;
     font-size: 1rem;
 }
+
+
+@media screen and (max-width: 510px) {
+    .img-card .cardDetails h2{
+        font-size: 1.3rem;
+    }
+    .img-card .cardDetails .CDleft, .img-card .cardDetails .CDright{
+        flex: auto;
+        margin: 0;
+    }
+}

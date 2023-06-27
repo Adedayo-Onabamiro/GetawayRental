@@ -1,5 +1,6 @@
 #Download{
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -63,4 +64,74 @@
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+
+@media screen and (max-width: 1360px) {
+    .DownloadContainer .left .buttonsBox{
+        width: 70%;
+    }
+    .DownloadContainer .left button{
+        font-size: 1.2rem;
+        width: 200px;
+        padding: 3%;
+        margin: 0 1%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .DownloadContainer .left{
+        height: 100%;
+        width: 45%;
+    }
+    .DownloadContainer .left .title{
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin: 3% 0;
+        color: black;
+    }
+    .DownloadContainer .left p{
+        margin: 3% 0;
+        font-size: .9rem;
+        color: rgb(130, 127, 127);
+    }
+    .DownloadContainer .left .buttonsBox{
+        width: 80%;
+    }
+    .DownloadContainer .left button{
+        font-size: 1.2rem;
+        width: 200px;
+        padding: 3%;
+        margin: 0 1%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .DownloadContainer .left{
+        height: 100%;
+        width: 45%;
+    }
+    .DownloadContainer .right{
+        height: 100%;
+        width: 40%;
+    }
+    .DownloadContainer .right img{
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 862px) {
+    .DownloadContainer{
+        height: 70%;
+        width: 80%;
+        padding: 10% 10%;
+        text-align: center;
+    }
+    .DownloadContainer .left .buttonsBox, .DownloadContainer .left{
+        width: 100%;
+    }
+    .DownloadContainer .right {
+        display: none;
+    }
 }

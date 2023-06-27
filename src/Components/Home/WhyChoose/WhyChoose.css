@@ -1,5 +1,6 @@
 #WhyChoose{
-    height: 150vh;
+    min-height: 150vh;
+    height: 100%;
     width: 80%;
     padding: 0 10%;
     display: flex;
@@ -110,4 +111,59 @@
     font-size: 1.4rem;
     font-weight: 700;
     margin: 0;
+}
+
+@media screen and (max-width: 1360px) {
+    .imageBox{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imageBox img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    .contentBox{
+        flex-direction: column;
+    }
+    .contentBox .left, .contentBox .right{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .contentBox .right{
+        text-align: left;
+    }
+    .contentBox .right .box{
+        width: 100%;
+        padding: 0 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contentBox .right .box{
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+    }
+    .contentBox .right .box .left, .contentBox .right .box .right{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contentBox .right .box .left img{
+        width: 80px;
+    }
 }

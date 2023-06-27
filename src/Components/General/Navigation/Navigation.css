@@ -8,9 +8,6 @@
     left: 0;
     position: absolute;
 }
-.TopNavContainer button{
-    padding: 8% 14%;
-}
 .TopNavContainer{
     background-color: transparent;
     height: 5rem;
@@ -19,6 +16,9 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+}
+.TopNavContainer button{
+    padding: 5% 10%;
 }
 .LogoBox{
     height: auto;
@@ -117,19 +117,40 @@
     align-items: center;
 }
 /* Responsive code */
-@media screen and (max-width: 1240px) {
-    .LogoBox .part1, .logo .part2, .LogoBox, .NavMenuUl{
-      width: fit-content;
+@media screen and (max-width: 1360px) {
+    #Header{
+        width: 95%;
+        padding: 0 2.5%;
     }
-  }
-@media screen and (max-width: 1011px) {
-    .TopNavContainer{
-        margin: 2% 0;
-      }
+    .SignRegister{
+        width: auto;
+    }
+    .SignRegister p{
+        width: 8rem;
+    }
+    .NavMenuLi{
+        padding: auto ;
+    }
+}
+@media screen and (max-width: 1073px) and (min-width: 1025px) {
+    .NavMenuLi{
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .LogoBox{
+        width: auto;
+    }
     .hamburger{
         display: flex;
         cursor: pointer;
         z-index: 100;
+    }
+    .NavMenuContainer {
+        width: 100%;
+        align-items: end;
+        justify-content: end;
+        display: flex;
     }
     .NavMenuContainer .NavMenuUl{
         list-style: none;
@@ -167,5 +188,17 @@
     }
     .NavMenuLi::after{
         height: 0px;
+    }
+}
+@media screen and (max-width: 500px){
+    .LogoBox img{
+        height: 70px;
+        width: 70px;
+        object-fit: contain;
+    }
+}
+@media screen and (max-width: 320px){
+    .SignRegister{
+        display: none;
     }
 }

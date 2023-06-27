@@ -79,3 +79,87 @@
     background-repeat: no-repeat;
     background-position: right top;
 }
+@media screen and (max-width: 1360px) {
+    .SaveBigContainer .left{
+        width: 50%;
+        align-items: start;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #SaveBig{
+        width: 90%;
+        padding: 0 5%;
+    }
+}
+@media screen and (max-width: 990px) {
+    .SaveBigContainer .left .one{
+        font-size: 1.4rem;
+        margin:0 0 4% 0;
+        padding: 0;
+    }
+    .SaveBigContainer .left .two{
+        font-size: 3.2rem;
+        margin:0 0 4% 0;
+        padding: 0;
+    }
+    .BookRideLearnMore button{
+        width: 150px;
+        height: 50px;
+        margin-right: 5%;
+    }
+}
+@media screen and (max-width: 853px) {
+    .SaveBigContainer .left .one{
+        font-size: 1.2rem;
+        margin:0 0 4% 0;
+        padding: 0;
+    }
+    .SaveBigContainer .left .two{
+        font-size: 2.7rem;
+        margin:0 0 4% 0;
+        padding: 0;
+    }
+    .BookRideLearnMore button{
+        width: 150px;
+        height: 40px;
+        margin-right: 5%;
+    }
+}
+@media screen and (max-width: 853px) {
+    .SaveBigContainer, .SaveBigContainer .left{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } 
+    .SaveBigContainer .right, .herobg{
+        display: none;
+    }
+}
+@media screen and (max-width: 470px) {
+    .SaveBigContainer .left{
+        width: 100%;
+        align-items: center;
+    }
+    .SaveBigContainer .left .one{
+        font-size: 1.2rem;
+        margin:0 0 4% 0;
+        padding: 0;
+    }
+    .SaveBigContainer .left .two{
+        font-size: 2.1rem;
+        margin:0 0 4% 0;
+        padding: 0;
+    }
+    .SaveBigContainer .left .three{
+        font-size: 1rem;
+        margin:0 0 4% 0;
+        padding: 0;
+    }
+    .BookRideLearnMore{
+        flex-direction: column;
+    }
+    .BookRideLearnMore button{
+        margin:3% 0;
+    }
+}

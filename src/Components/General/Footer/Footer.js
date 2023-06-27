@@ -1,5 +1,7 @@
 import React from 'react'
 import "../Footer/Footer.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMailBulk, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 export const Footer = () => {
   return (
@@ -13,12 +15,12 @@ export const Footer = () => {
                      We have the perfect car to meet your needs.
                     </p>
                     <span>
-                        <fontawesome></fontawesome>
+                        <FontAwesomeIcon icon={faPhone} />
                         <p>(123) -456-789</p>
                     </span>
 
                     <span>
-                        <fontawesome></fontawesome>
+                        <FontAwesomeIcon icon={faMailBulk} />
                         <p> carrental@gmail.com</p>
                     </span>
 

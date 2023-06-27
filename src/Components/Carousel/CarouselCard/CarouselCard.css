@@ -73,3 +73,25 @@
     padding: 0;
     text-align: center;
 }
+
+@media screen and (max-width: 660px) {
+    .CarouselCard{
+        height: auto;
+        width: 100%;
+    }
+    .CarouselCard .top p, .CarouselCard .bottom .left h2{
+        font-size: 1.1rem;
+        text-align: left;
+    }
+    .CarouselCard .bottom .left img{
+        height: 40px;
+        width: 40px;
+    }
+    .CarouselCard .bottom .right h1{
+        color: orangered;
+        font-size: 2rem;
+    }
+    .CarouselCard .bottom .right{
+        display: none;
+    }
+  }

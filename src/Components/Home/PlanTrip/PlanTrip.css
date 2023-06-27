@@ -1,8 +1,9 @@
 #PlanTrip{
-    height: 80vh;
+    min-height: 80vh;
+    height: auto;
     width: 80%;
-    padding: 0 10%;
-    background-color: white;
+    padding: 10% 10%;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,4 +32,14 @@
     align-items: center;
     flex-direction: row;
     width: 100%;
+}
+
+@media screen and (max-width: 832px) {
+    #PlanTrip{
+        text-align: center;
+    }
+    .PlanTripContainer .box{
+        flex-direction: column;
+        width: 100%;
+    }
 }

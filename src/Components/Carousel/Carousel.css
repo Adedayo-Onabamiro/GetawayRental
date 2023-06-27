@@ -1,77 +1,3 @@
-/* .carouselwrapper {
-    width: fit-content;
-    overflow: hidden;
-    border: 5px solid black;
-    position: relative;
-}
-.carousel{
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-}
-.carousel.prev {
-    animation-duration: .6s;
-    animation-timing-function:cubic-bezier(0.83, 0, 0.17, 1);
-    animation-name: prev;
-}
-  
-.carousel.next {
-    animation-duration: .6s;
-    animation-timing-function:cubic-bezier(0.83, 0, 0.17, 1);
-    animation-name: next;
-}
-li {
-    padding: 50px;
-    text-align: center;
-    width: auto;
-    box-sizing: border-box;
-}  
-.ui{
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    z-index: 100;
-} 
-button {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:40px;
-    height:40px;
-    border-radius:50%;
-    transition: all .2s cubic-bezier(0.39, 0.575, 0.565, 1);
-}
-button:hover {
-    border: 2px solid black;
-    transition: all .2s cubic-bezier(0.39, 0.575, 0.565, 1);
-}
-@keyframes next {
-  from {
-    transform:translateX(0px);
-  }
-  to {
-    transform:translateX(calc(0px + var(--cardWidth)));
-  }
-}
-
-@keyframes prev {
-  from {
-    transform:translateX(0px);
-  }
-  to {
-    transform:translateX(calc(0px - var(--cardWidth)));
-  }
-} */
-
 :root {
   --up: 2; /* Number of items to display in the carousel (default: 3) */
   --card-margin: 12px; /* Margin around each card */
@@ -184,5 +110,12 @@ button:hover {
   }
   to {
     transform: translateX(calc(0px - var(--cardWidth))); /* Ending position of the animation */
+  }
+}
+
+
+@media screen and (max-width: 660px) {
+  .ui button{
+    display: none;
   }
 }

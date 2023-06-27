@@ -85,7 +85,7 @@ button{
   align-items: center;
 }
 .date-picker {
-  width: 100%; 
+  width: 80%; 
   padding: 5px;
   border-radius: 3px;
   max-height: 60px;
@@ -281,3 +281,54 @@ button{
   text-align: center;
 }
 /* end of member card */
+
+@media screen and (max-width: 1360px) {
+  .table{
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  /* Start of Banner */
+  .Banner .center{
+    align-items: center;
+  }
+  .Banner .center h3{
+    font-size: 2rem;
+    font-weight: 700;
+    width: 80%;
+  }
+  .Banner .center p{
+    font-size: 1.3rem;
+  }
+  /* End of Banner */
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 710px) {
+  .formContent{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .form-container{
+    height: 100%;
+    padding: 5% 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .formContent{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .Banner .center h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+  }
+  .Banner .center p{
+    font-size: 1rem;
+  }
+  .Banner .center .cright{
+    display: none;
+  }
+}

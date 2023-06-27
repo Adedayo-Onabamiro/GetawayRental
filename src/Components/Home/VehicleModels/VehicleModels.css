@@ -107,3 +107,46 @@
     background-color: transparent;
     color: black;  
 }
+
+@media screen and (max-width: 1360px) {
+    #VehicleModels{
+        height: 90vh;
+        width: 90%;
+        padding: 0 5%;
+    }
+    .VehicleModelsContainer .box .right,     .VehicleModelsContainer .box .left{
+        width: auto;
+    }
+    .VehicleModelsContainer .box .center{
+        width: 40%;
+    }
+    .VehicleModelsContainer .box .left button{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 845px) {
+    #VehicleModels{
+        height: auto;
+        min-height: 90vh;
+        width: 80%;
+        padding: 0 10%;
+        text-align: center;
+    }
+    .VehicleModelsContainer .box{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .VehicleModelsContainer .box button{
+        padding: 15px 25px;
+    }
+    .VehicleModelsContainer .box .left,     .VehicleModelsContainer .box .center {
+        height: 80%;
+        width: 80%;
+    }
+
+    .VehicleModelsContainer .box .right {
+        width: auto;
+    }
+}

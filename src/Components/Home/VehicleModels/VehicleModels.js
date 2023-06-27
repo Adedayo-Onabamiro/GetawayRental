@@ -1,9 +1,17 @@
 import React, {useState, useEffect} from 'react'
 import "../VehicleModels/VehicleModels.css";
 import Table from '../../General/Table';
+import { CarDataLocal } from '../../../Data/CarDataLocal';
 
 
 export const VehicleModels = () => {
+    const [selectedItem, setSelectedItem] = useState(CarDataLocal[0]); // Set initial selected item
+
+    const handleButtonClick = (itemId) => {
+      const selectedItem = CarDataLocal.find((item) => item.id === itemId);
+      setSelectedItem(selectedItem);
+    };
+  
   return (
     <>  
         <section id='VehicleModels'>
@@ -15,14 +23,13 @@ export const VehicleModels = () => {
                 </div>
                 <div className='box'>
                     <div className='left'>
-                        <button>Audi A1 S-LINE</button>
-                        <button>VW Gold 6</button>
-                        <button>Toyota Camry</button>
-                        <button> BMW 320 ModernLine</button>
-                        <button>Mercedes-Benz GLK</button>
-                        <button>VW Passat CC</button>
+                    {CarDataLocal.map((item) => (
+                        <button key={item.id} onClick={() => handleButtonClick(item.id)}>
+                        {item.name}
+                        </button>
+                    ))}
                     </div>
-                    <div className='center'> <img src='/img/carsBig/golf6.jpg' /> </div>
+                    <div className='center'> <img src={selectedItem.img} /> </div>
                     <div className='right'>
                         <div className='top'> <p> <span>$45</span> / rent per day</p> </div>
                         <div className='middle'>

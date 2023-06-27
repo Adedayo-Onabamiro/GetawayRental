@@ -1,15 +1,9 @@
-import Golf6 from "../images/cars-big/golf6.jpg";
-import AudiA1 from "../images/cars-big/audia1.jpg";
-import Toyota from "../images/cars-big/toyotacamry.jpg";
-import Bmw320 from "../images/cars-big/bmw320.jpg";
-import Benz from "../images/cars-big/benz.jpg";
-import Passat from "../images/cars-big/passatcc.jpg";
-
 export const CarDataLocal = [
     {
+      id: 1,
       name: "VW Golf 6",
       price: "37",
-      img: Golf6,
+      img: 'img/carsBig/golf6.jpg',
       model: "Golf 6",
       mark: "Volkswagen",
       year: "2008",
@@ -19,9 +13,10 @@ export const CarDataLocal = [
       fuel: "Diesel",
     },
     {
+      id: 2,
       name: "Audi A1 S-Line",
       price: "45",
-      img: AudiA1,
+      img: 'img/carsBig/audia1.jpg',
       model: "Audi",
       mark: "A1",
       year: "2012",
@@ -31,9 +26,10 @@ export const CarDataLocal = [
       fuel: "Gasoline",
     },
     {
+      id: 3,
       name: "Toyota Camry",
       price: "30",
-      img: Toyota,
+      img: 'img/carsBig/toyotacamry.jpg',
       model: "Camry",
       mark: "Toyota",
       year: "2006",
@@ -43,9 +39,10 @@ export const CarDataLocal = [
       fuel: "Hybrid",
     },
     {
+      id: 4,
       name: "BMW 320 ModernLine",
       price: "35",
-      img: Bmw320,
+      img: 'img/carsBig/bmw320.jpg',
       model: "320",
       mark: "BMW",
       year: "2012",
@@ -55,9 +52,10 @@ export const CarDataLocal = [
       fuel: "Diesel",
     },
     {
+      id: 5,
       name: "Mercedes-Benz GLK",
       price: "50",
-      img: Benz,
+      img: 'img/carsBig/benz.jpg',
       model: "Benz GLK",
       mark: "Mercedes",
       year: "2006",
@@ -67,9 +65,10 @@ export const CarDataLocal = [
       fuel: "Diesel",
     },
     {
+      id: 6,
       name: "VW Passat CC",
       price: "25",
-      img: Passat,
+      img: 'img/carsBig/passatcc.jpg',
       model: "Passat CC",
       mark: "Volkswagen",
       year: "2008",

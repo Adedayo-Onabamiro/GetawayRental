@@ -33,7 +33,7 @@ export const VehicleModels = () => {
                     <div className='right'>
                         <div className='top'> <p> <span>$45</span> / rent per day</p> </div>
                         <div className='middle'>
-                            <Table></Table>
+                            <Table selectedItem={selectedItem}></Table>
                         </div>
                         <div className='bottom'> <p>RESERVE NOW</p> </div>
                     </div>

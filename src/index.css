@@ -129,10 +129,13 @@ button{
   border-bottom: 1px solid black;
   padding: 8px;
   text-align: center;
+  font-size: 1.1rem;
 }
 .separator {
-  border-right: 3px solid black; /* Adjust the thickness of the line as needed */
+  border-right: 3px solid black; 
 }
+
+
 /*End of table*/
 
 /* Start of Banner */

@@ -1,5 +1,7 @@
 import React from 'react'
 import "../WhyChoose/WhyChoose.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 export const WhyChoose = () => {
   return (
@@ -20,7 +22,7 @@ export const WhyChoose = () => {
                               Our deals are designed to give you the ultimate renting experience,
                                so don't miss out on your chance to save big.
                         </p>
-                        <button>Find Details </button>
+                        <button>Find Details <FontAwesomeIcon icon={faChevronRight} /> </button>
                     </div>
                     <div className='right'>
                         <div className='box'>

@@ -41,6 +41,9 @@
     right: -15%;
     bottom: 0;
 }
+.youtubeBox:hover{
+    background-color: #cb4226;
+}
 .AboutCompanyContainer .aleft img{
     height: 100%;
     width: 100%;

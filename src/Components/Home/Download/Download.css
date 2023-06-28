@@ -40,16 +40,21 @@
     color: rgb(130, 127, 127);
 }
 .DownloadContainer .left .buttonsBox{
-    width: 60%;
+    width: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
 }
-.DownloadContainer .left button{
-    font-size: 1.3rem;
-    padding: 3% 5%;
-    margin: 5% 0;
+.DownloadContainer .left .downloadbtn {
+    height: 50px;
+    width: 200px;
+    margin: 0 3%;
+}
+.DownloadContainer .left .downloadbtn img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 .DownloadContainer .right{
     height: 100%;
@@ -130,6 +135,10 @@
     }
     .DownloadContainer .left .buttonsBox, .DownloadContainer .left{
         width: 100%;
+        flex-direction: column;
+    }
+    .DownloadContainer .left .downloadbtn {
+        margin: 1% 0%;
     }
     .DownloadContainer .right {
         display: none;

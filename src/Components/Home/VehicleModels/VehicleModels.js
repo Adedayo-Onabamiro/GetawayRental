@@ -35,7 +35,7 @@ export const VehicleModels = () => {
                         <div className='middle'>
                             <Table selectedItem={selectedItem}></Table>
                         </div>
-                        <div className='bottom'> <p>RESERVE NOW</p> </div>
+                        <div className='bottom'> <button>RESERVE NOW</button> </div>
                     </div>
                 </div>
             </div>

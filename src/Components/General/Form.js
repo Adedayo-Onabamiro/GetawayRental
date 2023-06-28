@@ -25,9 +25,12 @@ const Form = () => {
                 </div>
                 <select className="dropdown">
                 <option value="">Select Option</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
+                <option value="option1">Audi A1 S-Line</option>
+                <option value="option2">VW Golf 6</option>
+                <option value="option3">Toyota Camry</option>
+                <option value="option4">BMW 320 ModernLine</option>
+                <option value="option5">Mercedes-Benz GLK</option>
+                <option value="option6">VW Passat CC</option>
                 </select>
             </div>
             <div className="form-item">
@@ -37,9 +40,11 @@ const Form = () => {
                 </div>
                 <select className="dropdown">
                 <option value="">Select Option</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
+                <option value="option1">Lagos</option>
+                <option value="option2">Abuja</option>
+                <option value="option3">New York</option>
+                <option value="option4">Accra</option>
+                <option value="option5">London</option>
                 </select>
             </div>
             <div className="form-item">
@@ -49,15 +54,17 @@ const Form = () => {
                 </div>
                 <select className="dropdown">
                 <option value="">Select Option</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
+                <option value="option1">Lagos</option>
+                <option value="option2">Abuja</option>
+                <option value="option3">New York</option>
+                <option value="option4">Accra</option>
+                <option value="option5">London</option>
                 </select>
             </div>
             <div className="form-item">
                 <div className="icon-label">
                 <FontAwesomeIcon icon={faCalendarAlt} className="icon" />
-                <span className="label">Date</span>
+                <span className="label">Pick Up</span>
                 </div>
                 <div className="date-picker-wrapper">
                 <DatePicker
@@ -70,7 +77,7 @@ const Form = () => {
             <div className="form-item">
                 <div className="icon-label">
                 <FontAwesomeIcon icon={faCalendarAlt} className="icon" />
-                <span className="label">Date</span>
+                <span className="label">Drop off</span>
                 </div>
                 <div className="date-picker-wrapper">
                 <DatePicker

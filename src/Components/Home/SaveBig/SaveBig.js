@@ -1,5 +1,7 @@
 import React from 'react'
 import "../SaveBig/SaveBig.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretRight, faCheckCircle, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 // import { Navigation } from '../../General/Navigation/Navigation';
 
 export const SaveBig = () => {
@@ -13,8 +15,8 @@ export const SaveBig = () => {
                     <h1 className='two'  style={{fontWeight: "700"}}>Save <span style={{color: "#ff5130"}}>big</span> with our car rental</h1>
                     <p className='three'  style={{color: "#d3d3d8"}}>Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more.</p>
                     <div className='BookRideLearnMore'>
-                        <button style={{fontWeight: "700"}}> Book Ride</button>
-                        <button style={{backgroundColor: "black", fontWeight: "700"}}> Learn More </button>
+                        <button style={{fontWeight: "700"}}> Book Ride <FontAwesomeIcon icon={faCheckCircle} /> </button>
+                        <button className='btn2'> Learn More <FontAwesomeIcon icon={faChevronRight} />  </button>
                     </div>
                 </div>
                 <div className='right'>

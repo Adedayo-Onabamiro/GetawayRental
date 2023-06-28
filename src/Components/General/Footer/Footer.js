@@ -47,7 +47,11 @@ export const Footer = () => {
                 <div className='ffour'>
                     <h3>SUBSCRIPTION</h3>
                     <p>Subscribe your Email address for latest news & updates.</p>
-                    <button style={{backgroundColor: "grey"}}>Enter Email Address</button>
+                    {/* <button style={{backgroundColor: "grey"}}>Enter Email Address</button> */}
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                    />
                     <button>Submit</button>
                 </div>
             </div>

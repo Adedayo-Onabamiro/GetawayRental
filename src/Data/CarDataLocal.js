@@ -11,6 +11,7 @@ export const CarDataLocal = [
       air: "Yes",
       transmission: "Manual",
       fuel: "Diesel",
+      carClass: "Hatchback"
     },
     {
       id: 2,
@@ -24,6 +25,7 @@ export const CarDataLocal = [
       air: "Yes",
       transmission: "Manual",
       fuel: "Gasoline",
+      carClass: "Hatchback"
     },
     {
       id: 3,
@@ -37,6 +39,7 @@ export const CarDataLocal = [
       air: "Yes",
       transmission: "Automatic",
       fuel: "Hybrid",
+      carClass: "Sedan"
     },
     {
       id: 4,
@@ -50,6 +53,7 @@ export const CarDataLocal = [
       air: "Yes",
       transmission: "Manual",
       fuel: "Diesel",
+      carClass: "Sedan"
     },
     {
       id: 5,
@@ -63,6 +67,7 @@ export const CarDataLocal = [
       air: "Yes",
       transmission: "Manual",
       fuel: "Diesel",
+      carClass: "SUV"
     },
     {
       id: 6,
@@ -76,6 +81,7 @@ export const CarDataLocal = [
       air: "Yes",
       transmission: "Automatic",
       fuel: "Gasoline",
+      carClass: "Coupe"
     },
 ];
   

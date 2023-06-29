@@ -67,10 +67,11 @@
   width: calc(100% - var(--card-margin) * 2); /* Set the width of the controls */
   justify-content: space-between; /* Space out the controls */
   padding: var(--card-margin); /* Add padding around the controls */
-  z-index: 100; /* Set a higher z-index to appear above other elements */
+  z-index: 0; /* Set a higher z-index to appear above other elements */
 }
   /* Control Button */
   .ui button {
+    
     cursor: pointer; /* Set cursor to pointer on hover */
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Center the icon vertically */

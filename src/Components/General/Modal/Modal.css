@@ -1,3 +1,22 @@
+.alert {
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .success {
+    background-color: green;
+    color: white;
+  }
+  
+  .error {
+    background-color: rgb(148, 18, 18);
+    color: white;
+  }
+  
 .modal {
     position: fixed;
     top: 0;
@@ -9,13 +28,13 @@
     align-items: center;
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.5);
-    
 }
 .modal-content {
     background-color: white;
     border: 5px solid white;
     width: 60%;
-    height: 90%;
+    margin-top: 5%;
+    height: 80%;
     overflow-y: auto;
     border-radius: 5px;
     display: flex;

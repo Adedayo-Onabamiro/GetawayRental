@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import "../VehicleModels/VehicleModels.css";
 import Table from '../../General/Table';
 import { CarDataLocal } from '../../../Data/CarDataLocal';
-
+import { Link } from 'react-scroll';
 
 export const VehicleModels = () => {
     const [selectedItem, setSelectedItem] = useState(CarDataLocal[0]); // Set initial selected item
@@ -35,7 +35,11 @@ export const VehicleModels = () => {
                         <div className='middle'>
                             <Table selectedItem={selectedItem}></Table>
                         </div>
-                        <div className='bottom'> <button>RESERVE NOW</button> </div>
+                        <div className='bottom'> 
+                            <Link to="BookCar" className="linktag" smooth={true} duration={500}>
+                                <button> RESERVE NOW </button>
+                            </Link> 
+                        </div>
                     </div>
                 </div>
             </div>

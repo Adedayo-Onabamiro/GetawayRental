@@ -103,11 +103,16 @@
     font-weight: bold;
     font-size: 1.1rem;
 }
+.VehicleModelsContainer .box .right .bottom  .linktag{
+    padding: 0;
+    margin: 0;
+}
 .VehicleModelsContainer .box .right .bottom button{
     padding: 15px 25px;
     font-weight: bold;
     font-size: 1.1rem;
     width: 100%;
+    box-shadow: none;
 }
 .VehicleModelsContainer .box .right .middle{
     width: 100%;

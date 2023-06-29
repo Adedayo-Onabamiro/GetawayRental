@@ -204,6 +204,12 @@
     font-weight: bold;
 }
  
+@media (max-width: 1250px) {
+  .modal-content {
+    width: 80%;
+    height: 80%;
+  }
+}
 
 @media (max-width: 850px) {
     .modal-content .content{

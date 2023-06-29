@@ -204,20 +204,20 @@
     font-weight: bold;
 }
  
-@media (max-width: 1250px) {
+@media screen and (max-width: 1250px) {
   .modal-content {
     width: 80%;
     height: 80%;
   }
 }
 
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
     .modal-content .content{
         flex-direction: column;
         width: 94%;
         padding:3%;
     }
-    .modal-content .content .rcleft, .rcright{
+    .modal-content .content .rcleft,.modal-content .content .rcright{
         width: 100%;
         justify-content: center;
         align-items: center;
@@ -226,7 +226,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .personalform-row {
       flex-direction: column;
     }
@@ -236,7 +236,7 @@
     }
 }
 
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
     .modal-content .message h4{
         margin: 1% 0;
         padding: 0;

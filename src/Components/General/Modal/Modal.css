@@ -1,0 +1,230 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+.modal-content {
+    background-color: white;
+    border: 5px solid white;
+    width: 60%;
+    height: 90%;
+    overflow-y: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.modal-content .row{
+    width: 100%;
+    height: auto;
+}
+
+/* Start of header side */
+.modal-content .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal-content .title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff5130;
+    width: 94%;
+    padding: 0 3%;
+    color: white;
+}
+.modal-content .title .icon{
+    font-weight: 900;
+    padding: 0;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+.modal-content .message{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    width: 94%;
+    padding:3%;
+    background-color: #f3d6d090;
+}
+.modal-content .message h4{
+    margin: 1% 0;
+    padding: 0;
+    font-size: 1.3rem;
+    color: #ff5130;
+}
+.modal-content .message p{
+    margin: 1% 0;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #00000090;
+    font-weight: 500;
+}
+/* End of header side */
+
+/* Start of content side */
+.modal-content .content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 94%;
+    padding:3%;
+}
+.modal-content .content h3{
+    margin: 1% 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ff5130;
+}
+.modal-content .rcright{
+    width: 60%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: start;
+    height: 100%;
+    text-align: right;
+}
+.modal-content .rcright img{
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+}
+.modal-content .rcleft{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: 100%;
+    width: 40%;
+}
+/* End of content side */
+
+/*Start of personal form side*/
+.personalform-container {
+    background-color: transparent;
+    width: 94%;
+    padding:3%;
+    border-top: 1px solid #00000020;
+  }
+  .personalform-container h3{
+    margin: 2% 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ff5130;
+}
+  .personalform-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .personalform-item {
+    flex-basis: 48%;
+  }
+  
+  .personalform-item.full-width {
+    flex-basis: 100%;
+  }
+  
+  .personalform-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .personalform-container input {
+    background-color: gainsboro;
+    width: 94%;
+    padding: 3% ;
+    border: none;
+    outline: none;
+  }
+  .checkbox, .checkbox label{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 1% 0;
+    margin: 0;
+    width: 100%;
+  }
+  .checkbox input{
+    border: 2px solid black;
+    width: 10%;
+  }
+  
+/*End of personal form side*/
+
+.modal-content .bottom{
+    background-color: gainsboro;
+    width: 94%;
+    padding:0 3%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.modal-content button {
+    padding: 20px 45px;
+    border: none;
+    cursor: pointer;
+    margin: 5% 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+ 
+
+@media (max-width: 850px) {
+    .modal-content .content{
+        flex-direction: column;
+        width: 94%;
+        padding:3%;
+    }
+    .modal-content .content .rcleft, .rcright{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .personalform-row {
+      flex-direction: column;
+    }
+  
+    .personalform-item {
+      flex-basis: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .modal-content .message h4{
+        margin: 1% 0;
+        padding: 0;
+        font-size: 1.1rem;
+        color: #ff5130;
+        text-align: center;
+    }
+    .modal-content .message p{
+        margin: 1% 0;
+        padding: 0;
+        font-size: .9rem;
+        color: #00000090;
+        font-weight: 500;
+        text-align: center;
+    }
+}

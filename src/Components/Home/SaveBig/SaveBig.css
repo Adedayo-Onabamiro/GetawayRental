@@ -52,16 +52,21 @@
     width: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: column;
     flex-direction: row;
 }
-.BookRideLearnMore button{
+.BookRideLearnMore .linktag{
+    padding: 0;
+    margin: 0;
+}
+.linktag button, .BookRideLearnMore button {
     /* padding: 8% 20%; */
     width: 200px;
     height: 60px;
-    margin-right: 5%;
+    margin: 0 5%;
 }
-.BookRideLearnMore >  button::before{
+.linktag >  button::before{
     content: "";
     position: absolute;
     top: 0;
@@ -74,7 +79,7 @@
     pointer-events: none;
     transition: transform 0.3s, opacity 0.3s;
 }
-.BookRideLearnMore > button:hover::before{
+.linktag > button:hover::before{
     transform: translateX(100%);
     opacity: 1;
     animation: reflective-light .5s  linear;

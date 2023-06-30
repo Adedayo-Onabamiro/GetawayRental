@@ -32,7 +32,6 @@ Browse through the available cars on the home page.
 Compare multiple cars to evaluate their features and pricing.
 Follow the straightforward reservation process to book a desired car.
 
-I hope this revision better captures the essence of a car rental website and provides clearer information about the features and functionalities. Feel free to make further adjustments as needed.
 
 ## Home Page Screenshot
 

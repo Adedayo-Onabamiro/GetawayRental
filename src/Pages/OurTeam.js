@@ -7,8 +7,8 @@ import { TeamMemberCard } from '../Components/General/TeamMemberCard';
 export const OurTeam = () => {
     const items = [
         {
-            name : "Marcus Chillwell",
-            role : "Lead Developer",
+            name : "Adedayo Onabamiro",
+            role : "CEO",
             imgSrc :  "/img/team/1.png",
         },{
             name : "Funsho Obalende",
@@ -19,8 +19,8 @@ export const OurTeam = () => {
             role : "CTO",
             imgSrc :  "/img/team/3.png",
         },{
-            name : "Adedayo Onabamiro",
-            role : "CEO",
+            name : "Marcus Chillwell",
+            role : "Lead Developer",
             imgSrc :  "/img/team/4.png",
         },{
             name : "Lin Jackson",

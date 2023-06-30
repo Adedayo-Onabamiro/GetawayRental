@@ -1,0 +1,28 @@
+.page-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .car {
+    width: 102px;
+    height: 40px;
+    stroke: #002742;
+    fill: red;
+    transform: translateX(-100%);
+    animation: slideRight 1s linear infinite;
+  }
+  
+  @keyframes slideRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

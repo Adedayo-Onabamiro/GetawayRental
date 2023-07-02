@@ -173,9 +173,9 @@
     .NavMenuContainer .NavMenuUl{
         list-style: none;
         position: absolute;
-        background-color: black;
+        background-color: #00000050;
         opacity: 90%;
-        width: 97%;
+        width: auto;
         height: 100vh;
         left: -100%;
         top: 0;

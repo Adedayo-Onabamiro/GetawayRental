@@ -173,11 +173,11 @@
     .NavMenuContainer .NavMenuUl{
         list-style: none;
         position: absolute;
-        background-color: #00000050;
+        background-color: #000000;
         opacity: 90%;
-        width: auto;
+        width: 100%;
         height: 100vh;
-        left: -100%;
+        left: -103%;
         top: 0;
         display: flex;
         flex-direction: column;

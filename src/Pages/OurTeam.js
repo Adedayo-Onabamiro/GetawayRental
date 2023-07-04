@@ -8,31 +8,37 @@ import { TeamMemberCard } from '../Components/General/TeamMemberCard';
 export const OurTeam = () => {
   const items = [
     {
+      id: 1,
       name: "Adedayo Onabamiro",
       role: "CEO",
       imgSrc: "/img/team/1.png",
     },
     {
+      id: 2,
       name: "Funsho Obalende",
       role: "CFO",
       imgSrc: "/img/team/2.png",
     },
     {
+      id: 3,
       name: "Gani Adamu",
       role: "CTO",
       imgSrc: "/img/team/3.png",
     },
     {
+      id: 4,
       name: "Marcus Chillwell",
       role: "Lead Developer",
       imgSrc: "/img/team/4.png",
     },
     {
+      id: 5,
       name: "Lin Jackson",
       role: "Lead Designer",
       imgSrc: "/img/team/5.png",
     },
     {
+      id: 6,
       name: "Mukaku Romelu",
       role: "CRO",
       imgSrc: "/img/team/6.png",
@@ -80,7 +86,7 @@ export const OurTeam = () => {
       >
         {items.map((t, index) => (
           <TeamMemberCard
-            key={t.copy + index}
+            key={t.id}
             name={t.name}
             role={t.role}
             imgSrc={t.imgSrc}

@@ -5,9 +5,9 @@ export const TeamMemberCard = (props) => {
     let name = props.name;
     let role = props.role
   return (
-    <div class="Membercard">
+    <div className="Membercard">
         <img src={imgSrc} alt="Avatar" />
-        <div class="MembercardContainer">
+        <div className="MembercardContainer">
             <h4><b>{name}</b></h4> 
             <p>{role}</p> 
         </div>

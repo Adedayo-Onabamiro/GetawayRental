@@ -83,7 +83,8 @@ export const Carousel = () => {
             <ul onAnimationEnd={handleAnimationEnd} className={`${moveClass} carousel`}>
                 {carouselItems.map((t, index) => 
                     <CarouselCard 
-                    key={t.copy + index}
+                    // key={t.copy + index}
+                    key={`${t.text}-${index}`}
                     text = {t.text}
                     tname = {t.tname}
                     location = {t.location} 
